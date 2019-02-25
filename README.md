@@ -14,4 +14,4 @@ Environments: pytorch 0.4.0; Pillow 5.0.0; scikit-image 0.13.1; torchvision 0.2.
 
 You can simply run “python Demo.py” for testing.
 
-Download model at https://pan.baidu.com/s/1PJEfva6BzBQcMTX9PgWdiQ.
+Download model at https://drive.google.com/open?id=1DpNkeT8KKDBq2dIHhbIuj01Sl2eQA3_F
