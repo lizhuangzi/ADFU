@@ -15,18 +15,22 @@ class ResduialDeconv(nn.Module):
         self.upsamp1 = nn.Upsample(scale_factor=2)
         self.deconv1 = nn.ConvTranspose2d(in_channels=256, out_channels=256, kernel_size=2, stride=2, padding=0, bias=False)
         self.prelu1 = nn.PReLU()
+        self.conv1 = nn.Conv2d(in_channels=256,out_channels=256,kernel_size=1,stride=1,padding=0,bias=False)
 
         self.upsamp2 = nn.Upsample(scale_factor=2)
         self.deconv2 = nn.ConvTranspose2d(in_channels=256, out_channels=256, kernel_size=2, stride=2, padding=0, bias=False)
         self.prelu2 = nn.PReLU()
+        self.conv2 = nn.Conv2d(in_channels=256, out_channels=256, kernel_size=1, stride=1, padding=0, bias=False)
 
     def forward(self,x):
         upx1 = self.upsamp1(x)
+        upx1 = self.conv1(upx1)
         x = self.deconv1(x)
         x = self.prelu1(x)
         x = x + upx1
 
         upx2 = self.upsamp2(x)
+        upx2 = self.conv2(upx2)
         x = self.deconv2(x)
         x = self.prelu2(x)
         x = x + upx2
@@ -97,7 +101,7 @@ class _Transition(nn.Sequential):
         atten = torch.abs(x - prevousinput)
         atten = self.Capattention(atten)
         atten = F.tanh(atten)
-        atten = 0.5 * (x * atten)
+        atten = alambda * (x * atten)
         x = atten + x
         return x
 class _DenseBlock(nn.Sequential):
