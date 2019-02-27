@@ -1,7 +1,7 @@
 # ADRD
 IJCAI2019 code for ADRD.
 
-1.411Supplementary_experiment.pdf additional visual comparisons.
+1.Supplementary.pdf additional visual comparisons.
 2.Code
 (1) data_utils.py   dataprocessing file.
 (2) Demo.py	    Code for test super-resolve images.
