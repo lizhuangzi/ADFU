@@ -16,7 +16,9 @@ You can simply run “python Demo.py” for testing.
 
 Download model at https://drive.google.com/open?id=1DpNkeT8KKDBq2dIHhbIuj01Sl2eQA3_F
 
-## Compare results
+## Comparison results
+if you do not want to download you can see more comparisons here.
+
 ![Image text](https://github.com/IJCAI19-ADRD/ADRD/raw/master/compareimage/1/1.png)
 
 ![Image text](https://github.com/IJCAI19-ADRD/ADRD/raw/master/compareimage/1/2.png)
