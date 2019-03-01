@@ -15,3 +15,14 @@ Environments: pytorch 0.4.0; Pillow 5.0.0; scikit-image 0.13.1; torchvision 0.2.
 You can simply run “python Demo.py” for testing.
 
 Download model at https://drive.google.com/open?id=1DpNkeT8KKDBq2dIHhbIuj01Sl2eQA3_F
+
+## Compare results
+![Image text](https://github.com/IJCAI19-ADRD/ADRD/raw/master/compareimage/1/1.png)
+
+![Image text](https://github.com/IJCAI19-ADRD/ADRD/raw/master/compareimage/1/2.png)
+
+![Image text](https://github.com/IJCAI19-ADRD/ADRD/raw/master/compareimage/1/3.png)
+
+![Image text](https://github.com/IJCAI19-ADRD/ADRD/raw/master/compareimage/1/5.png)
+
+![Image text](https://github.com/IJCAI19-ADRD/ADRD/raw/master/compareimage/1/4.png)
