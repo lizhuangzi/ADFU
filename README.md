@@ -1,11 +1,11 @@
-# ADRD
-IJCAI2019 code for ADRD.
+# ADLP
+IJCAI2019 code for ADLP.
 
 1.Supplementary.pdf additional visual comparisons.
 2.Code
 (1) data_utils.py   dataprocessing file.
 (2) Demo.py	    Code for test super-resolve images.
-(3) model.pkl	    well-trained model of ADRD.
+(3) model.pkl	    well-trained model of ADLP.
 (4) Model2.py	    Model Graph file.
 (5) Testdata	    Testing low-resolution images
 (6) outdir	    output dir of super-resolved images and bicubic images
