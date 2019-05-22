@@ -20,7 +20,7 @@ test_set = TestDatasetFromFolder(opt.inputLRpath, upscale_factor=4)
 test_loader = DataLoader(dataset=test_set, num_workers=4, batch_size=1, shuffle=False)
 
 # load model (double GPUs)
-ADRD = torch.load(opt.model_name)
+ADLP = torch.load(opt.model_name)
 
 for i,(val_lr, bicubicimg) in enumerate(test_loader):
 
@@ -30,7 +30,7 @@ for i,(val_lr, bicubicimg) in enumerate(test_loader):
         lr = lr.cuda()
 
     #prediction
-    sr = ADRD(lr)
+    sr = ADLP(lr)
 
     srdata = sr.data[0].permute(1, 2, 0).cpu().numpy()
     srdata[srdata < 0.0] = 0.0
