@@ -1,5 +1,5 @@
 # ADLP
-IJCAI2019 code for ADLP.
+NeurIPS 2019 code for ADLP.
 
 1.Supplementary.pdf additional visual comparisons.
 2.Code
