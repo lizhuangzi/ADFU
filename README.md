@@ -1,5 +1,5 @@
 # ADLP
-NeurIPS 2019 code for ADLP.
+IEEE TRANSACTIONS ON CYBERNETICS code for ADFU.
 
 1.Supplementary.pdf additional visual comparisons.
 2.Code
